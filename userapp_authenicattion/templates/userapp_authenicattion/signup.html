@@ -1,0 +1,19 @@
+{% extends 'userapp_authenicattion/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}SignUp{% endblock title %}
+
+{% block heading %}Welcome to SignUp page{% endblock heading %}
+
+{% block content %}
+    <div class="container " >
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-success ">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

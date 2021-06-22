@@ -1,0 +1,15 @@
+{% extends 'userapp_authenicattion/base.html' %}
+
+{% block title %}HomePage{% endblock title %}
+
+{% block heading %}Welcome to HomePage{% endblock heading %}
+
+{% block content %}
+    <div class="container">
+       <div class="row">
+           <div class="col text-center">
+                <h1 class="display-3 alert alert-success mt-5">hello {{ user.first_name }}</h1>
+           </div>
+       </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'userapp_authenicattion/base.html' %}
+{% block title %}Logout{% endblock title %}
+
+{% block heading %}Welcome to Logout page{% endblock heading %}
+
+{% block content %}
+    <div class="container " >
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <p class="text-danger">You have been Logged out. </p>
+                <a href="{% url 'login' %}">Login</a>  
+            </div>
+            
+        </div>
+        
+    </div>
+{% endblock content %}
